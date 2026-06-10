@@ -4,29 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CECyTE EMSaD 45 - San Pablo Tijaltepec</title>
+    <!-- Estilos incluidos aquí, no usamos archivo CSS aparte -->
     <style>
         * {margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif;}
         header {background-color: #006400; color: white; padding: 20px; text-align: center;}
         header div {display: flex; align-items: center; justify-content: center; gap: 15px; flex-wrap: wrap;}
-        nav {background-color: #004d00; padding: 10px;}
+        nav {background-color: #004d00; padding: 10px; margin: 0;}
         nav ul {list-style: none; display: flex; justify-content: center; flex-wrap: wrap; gap: 12px;}
         nav a {color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;}
         nav a:hover {background-color: #008000;}
         main {max-width: 1100px; margin: 20px auto; padding: 0 15px;}
         video {width: 100%; max-width: 750px; display: block; margin: 0 auto 25px; border-radius: 6px;}
-        .columnas {width: 48%; float: left; margin: 1%; padding: 15px; background-color: #f0f8f0; border-radius: 6px;}
+        .columnas {width: 48%; float: left; margin: 1%; padding: 20px; background-color: #f0f8f0; border-radius: 6px; border: 1px solid #cce8cc;}
+        .columnas p {text-align: justify; line-height: 1.7; color: #333;}
         .limpiar {clear: both;}
+        h2 {color: #006400; font-weight: bold; text-align: center; font-size: 28px; margin-bottom: 25px;}
         footer {background-color: #006400; color: white; padding: 20px; margin-top: 30px; display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; text-align: center;}
         footer div {display: flex; align-items: center; gap: 8px;}
-        @media(max-width: 700px) {.columnas {width: 100%; float: none; margin: 10px 0;}}
+        @media(max-width: 700px) {
+            .columnas {width: 100%; float: none; margin: 10px 0;}
+        }
     </style>
 </head>
 <body>
 
 <header>
     <div>
-        <img src="img/CECYTE.png" width="160" alt="Logo CECyTE">
-        <h1>COLEGIO DE ESTUDIOS CIENTÍFICOS Y TECNOLÓGICOS DEL ESTADO DE OAXACA<br>EMSaD N° 45 “San Pablo Tijaltepec”</h1>
+        <img src="img/CECYTE.png" width="170" alt="Logo CECyTE Oaxaca">
+        <h1>COLEGIO DE ESTUDIOS CIENTÍFICOS Y TECNOLÓGICOS DEL ESTADO DE OAXACA<br> EMSaD N° 45 “San Pablo Tijaltepec”</h1>
     </div>
 </header>
 
@@ -44,24 +49,31 @@
 <main>
     <section>
         <video controls poster="img/todo_a_un_clic.jpg">
-            <source src="video/Inicio%20de%20video%20cecyte.mp4" type="video/mp4">
+            <source src="video/video inicio cecyte.mp4" type="video/mp4">
             Tu navegador no admite la reproducción de video.
         </video>
     </section>
 
     <section>
-        <h2 style="color: #006400; text-align: center; margin: 25px 0; font-size: 28px;">📝 INFORMACIÓN INSTITUCIONAL</h2>
+        <h2>📝INFORMACIÓN INSTITUCIONAL</h2>
 
+        <!-- Columna Izquierda: Historia -->
         <div class="columnas">
-            <p><strong>📜 Historia de la Institución</strong><br><br>
-            El CECyTE EMSaD N° 45 de San Pablo Tijaltepec fue creado para ampliar oportunidades educativas en la región, ofreciendo estudios de calidad para jóvenes de la zona.</p>
+            <p>
+                <strong>📜 Historia de la Institución</strong><br><br>
+                El CECyTE EMSaD N° 45 de San Pablo Tijaltepec fue creado con el firme propósito de ampliar las oportunidades educativas en el nivel medio superior para los jóvenes de la región. Desde su fundación, ha trabajado para ofrecer educación de calidad en zonas donde antes era difícil acceder a estudios preparatorios. A lo largo de su trayectoria, se ha consolidado como un plantel comprometido, que evoluciona y se adapta a las necesidades de la comunidad, formando generaciones de estudiantes con bases sólidas para su futuro profesional.
+            </p>
         </div>
 
+        <!-- Columna Derecha: Misión y Visión -->
         <div class="columnas">
-            <p><strong>🎯 Misión y Visión</strong><br><br>
-            <strong>Misión:</strong> Brindar educación integral de excelencia, formando estudiantes con valores y conocimientos sólidos.<br><br>
-            <strong>Visión:</strong> Ser una institución líder, reconocida por su calidad y compromiso con el desarrollo de la comunidad.</p>
+            <p>
+                <strong>🎯 Misión y Visión</strong><br><br>
+                <strong>Misión:</strong> Brindar una educación integral de excelencia, fomentando el desarrollo de conocimientos, habilidades y valores en los estudiantes, para que puedan continuar sus estudios superiores o incorporarse al mundo laboral con éxito.<br><br>
+                <strong>Visión:</strong> Ser reconocido como una institución líder en la región, destacada por su calidad académica, inclusión, equidad y compromiso con el desarrollo social y económico de San Pablo Tijaltepec y sus alrededores.
+            </p>
         </div>
+
         <div class="limpiar"></div>
     </section>
 </main>
@@ -69,19 +81,19 @@
 <footer>
     <div>
         <img src="img/UBICACION.png" width="35" alt="Ubicación">
-        <p>San Pablo Tijaltepec, Oaxaca</p>
+        <p>San Pablo Tijaltepec, Distrito de Tlaxiaco, Oaxaca</p>
     </div>
     <div>
         <img src="img/FACEBOOK.png" width="35" alt="Facebook">
-        <p>Cecyteo Emsad Tijaltepec</p>
+        <p>Facebook: Cecyteo Emsad Tijaltepec</p>
     </div>
     <div>
-        <img src="img/GMAIL.png" width="35" alt="Correo">
-        <p>emsad45@cecyteo.edu.mx</p>
+        <img src="img/GMAIL.png" width="35" alt="Correo Electrónico">
+        <p>Correo: emsad45@cecyteo.edu.mx</p>
     </div>
     <div>
         <img src="img/WHATSAP.png" width="35" alt="WhatsApp">
-        <p>+52 1 951 257 6743</p>
+        <p>Contacto: +52 1 951 257 6743</p>
     </div>
 </footer>
 
